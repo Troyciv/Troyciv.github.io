@@ -5,7 +5,7 @@ git add -u && \
 git status && \
 read -p 'Enter the commit message:' commitMessage
 git commit -m "$commitMessage"
-# git push origin sources
+git push origin sources
 # read
 
 # git -C _site/ add --all
