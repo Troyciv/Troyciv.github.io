@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up a static website with Jekyll"
 date: 2017-12-01 
-categories: jekyll
+categories: jekyll linux
 ---
 
 [Jekyll](https://jekyllrb.com/) is the most popular static web-page generator out there.
