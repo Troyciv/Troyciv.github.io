@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-04T17:13:59+02:00</updated><id>http://localhost:4000/</id><title type="html">Troyka</title><subtitle></subtitle><entry><title type="html">The fundamental principle of Anki card creation</title><link href="http://localhost:4000/anki/2018/07/04/anki-fundamentals.html" rel="alternate" type="text/html" title="The fundamental principle of Anki card creation" /><published>2018-07-04T00:00:00+02:00</published><updated>2018-07-04T00:00:00+02:00</updated><id>http://localhost:4000/anki/2018/07/04/anki-fundamentals</id><content type="html" xml:base="http://localhost:4000/anki/2018/07/04/anki-fundamentals.html">&lt;p&gt;During the last weeks I’ve been a little more active on the &lt;a href=&quot;https://www.reddit.com/r/anki&quot;&gt;Anki subreddit&lt;/a&gt; than usual.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-04T21:31:38+02:00</updated><id>/</id><title type="html">Troyka</title><subtitle></subtitle><entry><title type="html">The fundamental principle of Anki card creation</title><link href="/anki/2018/07/04/anki-fundamentals.html" rel="alternate" type="text/html" title="The fundamental principle of Anki card creation" /><published>2018-07-04T00:00:00+02:00</published><updated>2018-07-04T00:00:00+02:00</updated><id>/anki/2018/07/04/anki-fundamentals</id><content type="html" xml:base="/anki/2018/07/04/anki-fundamentals.html">&lt;p&gt;During the last weeks I’ve been a little more active on the &lt;a href=&quot;https://www.reddit.com/r/anki&quot;&gt;Anki subreddit&lt;/a&gt; than usual.
 One thing I noticed was that some new users have difficulties to grasp how Anki actually creates cards.
 While I do think that the &lt;a href=&quot;https://apps.ankiweb.net/docs/manual.html&quot;&gt;official Anki docs&lt;/a&gt; are excellently written, I also understand that a technical documentation can be a little bit overwhelming at times.
 This is why I’ve written this short article in order to clear up some of the confusion.&lt;/p&gt;
@@ -21,8 +21,8 @@ A Note can consist of an arbitrary number of &lt;strong&gt;fields&lt;/strong&gt;
 &lt;p&gt;Each &lt;strong&gt;field&lt;/strong&gt; can contain text or links to images, videos and other files (e.g. audio files).
 Internally anki stores everything in a field as html.
 For ease of use Anki renders the html in the field directly and hides the html code.
-Very similar to your web browser which displays you the rendered html code of a website.
-If you want to see the actual html that is stored inside a field simply press &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ctrl-shift-x&amp;gt;&lt;/code&gt; when your cursor is inside a field. This can be very helpful for debug purposes.&lt;/p&gt;
+Very similar to your web browser that displays the rendered html code of a website.
+If you want to see the actual html that is stored inside a field simply press &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;ctrl-shift-x&amp;gt;&lt;/code&gt; when your cursor is inside a field. This can be very helpful for debugging purposes.&lt;/p&gt;
 
 &lt;p&gt;The &lt;strong&gt;note type&lt;/strong&gt; defines:&lt;/p&gt;
 &lt;ul&gt;
@@ -38,15 +38,15 @@ If you want to change the looks of your cards or you want to display a different
 You can create multiple different cards from the same note.
 No need to type the same information multiple times.&lt;/p&gt;
 
-&lt;p&gt;The simplest example of this are foreward and backward cards.
+&lt;p&gt;The simplest example of this are forward and backward cards.
 Your note type contains one field with a word in your mother tongue and another field with the word in your target language.
 In your note type you define two cards, one that goes L1-&amp;gt;L2 and a second that goes L2-&amp;gt;L1.&lt;/p&gt;
 
 &lt;p&gt;You can have multiple note types for different use cases and it’s often recommended to have more than one.
 For example, as a language learner, I have dedicated note types for picture cards, audio listening cards, cloze deletions and verb conjugations and a few more. Some have only one card template, others have several.&lt;/p&gt;
 
-&lt;p&gt;The &lt;strong&gt;cards&lt;/strong&gt; themselves are nothing more than tiny webpages build from html, css and (if needed) javascript.
-This is why it can only be benificial to learn the very basics of html and css when you want to design you own cards.
+&lt;p&gt;The &lt;strong&gt;cards&lt;/strong&gt; themselves are nothing more than tiny web pages build from html, css and (if needed) javascript.
+This is why it can only be beneficial to learn the very basics of html and css when you want to design you own cards.
 Don’t worry you don’t need to be a web developer, just get an idea of the basic principles.
 As you can see in the graphic, each card template has its own html markup (actually there are two, one for the front, one for the back) and all card templates share the same css file.&lt;/p&gt;
 
@@ -57,7 +57,7 @@ Note that you &lt;em&gt;add notes&lt;/em&gt; but never &lt;em&gt;cards&lt;/em&gt
 
 &lt;p&gt;That’s it.
 Quite a lot of special special lingo, I know.
-But once you understand this core principle, creating your own note types and design your own card templates will be much easier.&lt;/p&gt;</content><author><name></name></author><summary type="html">During the last weeks I’ve been a little more active on the Anki subreddit than usual. One thing I noticed was that some new users have difficulties to grasp how Anki actually creates cards. While I do think that the official Anki docs are excellently written, I also understand that a technical documentation can be a little bit overwhelming at times. This is why I’ve written this short article in order to clear up some of the confusion.</summary></entry><entry><title type="html">Setting up a static website with Jekyll</title><link href="http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Setting up a static website with Jekyll" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is the most popular static web-page generator out there.
+But once you understand this core principle, creating your own note types and design your own card templates will be much easier.&lt;/p&gt;</content><author><name></name></author><summary type="html">During the last weeks I’ve been a little more active on the Anki subreddit than usual. One thing I noticed was that some new users have difficulties to grasp how Anki actually creates cards. While I do think that the official Anki docs are excellently written, I also understand that a technical documentation can be a little bit overwhelming at times. This is why I’ve written this short article in order to clear up some of the confusion.</summary></entry><entry><title type="html">Setting up a static website with Jekyll</title><link href="/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html" rel="alternate" type="text/html" title="Setting up a static website with Jekyll" /><published>2017-12-01T00:00:00+01:00</published><updated>2017-12-01T00:00:00+01:00</updated><id>/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll</id><content type="html" xml:base="/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; is the most popular static web-page generator out there.
 It takes your content, written in markdown, some config-files and creates html and css files.
 No database, no other bs. Clean and simple.&lt;/p&gt;
 
