@@ -2,6 +2,7 @@
 layout: post
 title: The fundamental principle of Anki card creation
 date: 2018-07-04
+author: Troyciv
 categories: Anki
 ---
 
