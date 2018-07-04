@@ -26,7 +26,7 @@ A **note** is a collection of **fields**.
 Simply put, this is where you put all the relevant information you want to create card(s) from.
 A Note can consist of an arbitrary number of **fields**.
 
-Each **field** can contain text or links to images, videos other files (e.g. audio files).
+Each **field** can contain text or links to images, videos and other files (e.g. audio files).
 Internally anki stores everything in a field as html.
 For ease of use Anki renders the html in the field directly and hides the html code.
 Very similar to your web browser which displays you the rendered html code of a website.
