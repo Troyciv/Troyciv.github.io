@@ -29,8 +29,8 @@ A Note can consist of an arbitrary number of **fields**.
 Each **field** can contain text or links to images, videos and other files (e.g. audio files).
 Internally anki stores everything in a field as html.
 For ease of use Anki renders the html in the field directly and hides the html code.
-Very similar to your web browser which displays you the rendered html code of a website.
-If you want to see the actual html that is stored inside a field simply press `<ctrl-shift-x>` when your cursor is inside a field. This can be very helpful for debug purposes.
+Very similar to your web browser that displays the rendered html code of a website.
+If you want to see the actual html that is stored inside a field simply press `<ctrl-shift-x>` when your cursor is inside a field. This can be very helpful for debugging purposes.
 
 The **note type** defines:
 * number of **fields** per note
@@ -44,15 +44,15 @@ The advantage of this approach is that you separate content from layout.
 You can create multiple different cards from the same note.
 No need to type the same information multiple times.
 
-The simplest example of this are foreward and backward cards.
+The simplest example of this are forward and backward cards.
 Your note type contains one field with a word in your mother tongue and another field with the word in your target language.
 In your note type you define two cards, one that goes L1->L2 and a second that goes L2->L1.
 
 You can have multiple note types for different use cases and it's often recommended to have more than one.
 For example, as a language learner, I have dedicated note types for picture cards, audio listening cards, cloze deletions and verb conjugations and a few more. Some have only one card template, others have several.
 
-The **cards** themselves are nothing more than tiny webpages build from html, css and (if needed) javascript.
-This is why it can only be benificial to learn the very basics of html and css when you want to design you own cards.
+The **cards** themselves are nothing more than tiny web pages build from html, css and (if needed) javascript.
+This is why it can only be beneficial to learn the very basics of html and css when you want to design you own cards.
 Don't worry you don't need to be a web developer, just get an idea of the basic principles.
 As you can see in the graphic, each card template has its own html markup (actually there are two, one for the front, one for the back) and all card templates share the same css file.
 
