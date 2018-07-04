@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Setting up a static website with Jekyll | Troyka</title>
+<meta name="generator" content="Jekyll v3.8.3" />
+<meta property="og:title" content="Setting up a static website with Jekyll" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jekyll is the most popular static web-page generator out there. It takes your content, written in markdown, some config-files and creates html and css files. No database, no other bs. Clean and simple." />
+<meta property="og:description" content="Jekyll is the most popular static web-page generator out there. It takes your content, written in markdown, some config-files and creates html and css files. No database, no other bs. Clean and simple." />
+<link rel="canonical" href="http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html" />
+<meta property="og:site_name" content="Troyka" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-12-01T00:00:00+01:00" />
+<script type="application/ld+json">
+{"description":"Jekyll is the most popular static web-page generator out there. It takes your content, written in markdown, some config-files and creates html and css files. No database, no other bs. Clean and simple.","@type":"BlogPosting","url":"http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html","headline":"Setting up a static website with Jekyll","dateModified":"2017-12-01T00:00:00+01:00","datePublished":"2017-12-01T00:00:00+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Troyka" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Troyka</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Setting up a static website with Jekyll</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-12-01T00:00:00+01:00" itemprop="datePublished">Dec 1, 2017
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><a href="https://jekyllrb.com/">Jekyll</a> is the most popular static web-page generator out there.
+It takes your content, written in markdown, some config-files and creates html and css files.
+No database, no other bs. Clean and simple.</p>
+
+<p>This is a short tutorial on how to get it up and running.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>First we need to install ruby, the programming language jekyll is built upon.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ruby ruby-dev rubygem
+</code></pre></div></div>
+
+<p>Rubygem, or simply gem, is a packet manager for ruby, similar to apt for debian based linux distributions or pip for python packages.</p>
+
+<p>Now we want to allow us, the non-privileged user, to install ruby gems without sudo. Therefore we set gem to <code class="highlighter-rouge">--user-install</code>.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"gem: --user-install"</span> <span class="o">&gt;&gt;</span> ~/.gemrc
+</code></pre></div></div>
+
+<p>We also have to make sure to add the gem binary directory to our PATH. Add this to your <code class="highlighter-rouge">.profile</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for </span><span class="nb">dir </span><span class="k">in</span> <span class="nv">$HOME</span>/.gem/ruby/<span class="k">*</span><span class="p">;</span> <span class="k">do</span>
+    <span class="o">[</span> <span class="nt">-d</span> <span class="s2">"</span><span class="nv">$dir</span><span class="s2">/bin"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">dir</span><span class="k">}</span><span class="s2">/bin:</span><span class="k">${</span><span class="nv">PATH</span><span class="k">}</span><span class="s2">"</span>
+<span class="k">done</span>
+</code></pre></div></div>
+
+<p>In order to avoid logging out and in again we source the <code class="highlighter-rouge">.profile</code> with</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> ~/.profile
+</code></pre></div></div>
+
+<p>Now we can install jekyll with its dependencies</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler jekyll
+</code></pre></div></div>
+
+<p>Bundler is another package manager that takes care and satisfies eventual dependencies in our projects.</p>
+
+<p>Because Bundler might want to install some gems as dependencies we have to adjust the default installation directory for bundler similar to the rubygem configuration.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export</span> <span class="s2">"GEM_HOME=</span><span class="nv">$HOME</span><span class="s2">/.gem"</span> <span class="o">&gt;&gt;</span> ~/.bash-profile
+</code></pre></div></div>
+
+<p>Whenever you use gem or bundler to install ruby gems it should install them in ~/.gem from now on.
+If one of them still asks you for sudo rights something went wrong.</p>
+
+<p>You can check your current jekyll version with:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p>Update jekyll with:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundler update jekyll
+</code></pre></div></div>
+
+<h3 id="create-a-new-project">Create a new project</h3>
+
+<p>Finally, everything is installed and configured.
+Time to create your new website.</p>
+
+<p>Create a new project with</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new my-new-project
+</code></pre></div></div>
+
+<p>change into the new directory and build the website for test purposes</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>my-new-project
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>open your browser and go to</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>localhost:4000
+</code></pre></div></div>
+
+<p>Congratulations you’ve successfully set up your first static webpage with jekyll.</p>
+
+<p>Of course this is not the end of it.
+In the next post I will explain how to create a new post for your brand new blog. See you there.</p>
+
+  </div><a class="u-url" href="/jekyll/linux/2017/12/01/setting-up-a-static-website-with-jekyll.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Troyka</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Troyka</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/Troyciv"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Troyciv</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
