@@ -8,9 +8,12 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <!-- <li> -->
-          <!--   {{ site.title | escape }} -->
-          <!-- </li> -->
+          <li>
+            {{ site.title | escape }}
+          </li>
+          <li class="p-name">
+            {{- site.description | escape -}}
+          </li>
           <li class="p-name">
             {%- if site.author -%}
               by {{ site.author | escape }}
@@ -33,7 +36,6 @@
         {%- if site.license -%}
             <p>{{ site.license }} </p>
         {%- endif -%}
-        <p>{{- site.description | escape -}}</p>
       </div>
     </div>
 
