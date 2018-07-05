@@ -5,9 +5,9 @@ permalink: /blog/
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  <!-- {%- if page.title -%} -->
+  <!--   <h1 class="page-heading">{{ page.title }}</h1> -->
+  <!-- {%- endif -%} -->
 
   <!-- {{ content }} -->
 
