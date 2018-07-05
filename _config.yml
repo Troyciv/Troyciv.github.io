@@ -21,21 +21,21 @@ url: "https://troyciv.github.io" # the base hostname & protocol for your site, e
 show_excerpts: true
 # twitter_username: jekyllrb
 github_username: Troyciv
+reddit_username: troy_civ
 rss: rss
 license: >-
-  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/></a>
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="/assets/img/cc-by-nc-88x31.png"/></a>
   <br />
   <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Troyka</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/troyciv" property="cc:attributionName" rel="cc:attributionURL">Troyciv</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 # Default settings
-default:
+defaults:
   -
     scope:
-      path: "_posts/"
-      # type: "posts"
+      path: "_posts"
+      # type: ""
     values:
       layout: "post"
-      author: Troyciv
-
+      author: "Troyciv"
   -
     scope:
       path: "_drafts/"
@@ -50,7 +50,7 @@ plugins:
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: alembic-jekyll-theme
 strict_front_matter: true
 # include:
 # keep_files:
