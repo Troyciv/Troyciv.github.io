@@ -9,36 +9,58 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>
-            {{ site.title | escape }}
+            <h3 class="footer-heading">{{ site.title | escape }}</h3>
           </li>
+          <!-- <li> -->
+          <!--   <\!-- <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -\-> -->
+          <!--   {{ site.title | escape }} -->
+          <!-- </li> -->
           <li class="p-name">
             {{- site.description | escape -}}
           </li>
-          <li class="p-name">
-            {%- if site.author -%}
-              by {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
+          <!-- <li class="p-name"> -->
+          <!--   {%- if site.author -%} -->
+          <!--     by {{ site.author | escape }} -->
+          <!--   {%- else -%} -->
+          <!--     {{ site.title | escape }} -->
+          <!--   {%- endif -%} -->
+          <!-- </li> -->
+          {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+          {%- endif -%}
+          <li>
+            <a rel="author" href="{{ "/" | relative_url }}">Home</a>
+          </li>
+          <li>
+            <a href="{{ "/feed.xml" | relative_url }}">RSS-feed</a>
+          </li>
+          
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
-        <p>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+        <!-- {%- if site.github_username -%} -->
+        <!-- <li> -->
+        <!--   <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"> -->
+        <!--     <svg class="svg-icon"> -->
+        <!--       <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use> -->
+        <!--       <\!-- <use xlink:href="{{ '/_includes/icon-github.svg' | relative_url }}"></use> -\-> -->
+        <!--     </svg> -->
+        <!--     <span class="username">{{ site.github_username| escape }}</span> -->
+        <!--   </a> -->
+        <!-- </li> -->
+        <!-- {%- endif -%} -->
       </div>
 
       <div class="footer-col footer-col-3">
         {%- if site.license -%}
-            <p>{{ site.license }} </p>
+            <p>{{ site.license }}</p>
         {%- endif -%}
       </div>
-    </div>
 
+    </div>
+    
   </div>
 
 </footer>

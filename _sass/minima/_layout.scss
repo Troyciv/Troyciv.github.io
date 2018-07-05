@@ -145,6 +145,7 @@
 }
 
 .footer-col-3 {
+  text-align: right;
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
   width:         calc(35% - (#{$spacing-unit} / 2));
 }
@@ -157,6 +158,7 @@
   }
 
   .footer-col-3 {
+      text-align: left;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
