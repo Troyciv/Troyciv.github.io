@@ -1,10 +1,9 @@
 ---
-layout: post
 title: The fundamental principle of Anki card creation
 date: 2018-07-04
-<!-- edit: 2018-07-05 -->
-author: Troyciv
+# edit: 2018-07-05
 categories: Anki
+tags: Anki learn language
 ---
 
 During the last weeks I've been a little more active on the [Anki subreddit](https://www.reddit.com/r/anki) than usual.
