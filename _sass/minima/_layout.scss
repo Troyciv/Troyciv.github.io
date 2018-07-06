@@ -258,31 +258,34 @@
 }
 
 .section-divider {
+    border: 2px;
+
     hr {
         border: 0;
         text-align: center;
     }
+
     ::before {
         content: '...';
         display: inline-block;
-        font-size: 30px;
-        font-style: italic;
+        font-size: $base-font-size*2;
+        // font-style: italic;
         letter-spacing: 1em;
         position: relative;
     }
 }
 
 .page-navigation {
-    font-size: 14px;
+    font-size: $small-font-size;
     display: block;
     width: auto;
     overflow: hidden;
 
     a {
         display: block;
-        width: 50%;
+        width: 35%;
         float: left;
-        margin: 1em 0;
+        margin: 1.5em 0;
     }
 
     .next {
