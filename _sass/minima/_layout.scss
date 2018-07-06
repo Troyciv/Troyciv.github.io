@@ -108,7 +108,11 @@
 .site-footer {
   padding: $spacing-unit - 10;
   border-top: 1px solid $grey-color-light;
-  // background-color: $grey-color-dark;
+  background-color: $grey-color-dark;
+
+  a {
+      color: $grey-color;
+  }
 }
 
 .footer-heading {
@@ -124,7 +128,7 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
+  color: $grey-color-light;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
