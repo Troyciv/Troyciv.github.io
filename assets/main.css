@@ -256,8 +256,8 @@ table {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 20px; }
+  padding: 20px;
+  border-top: 1px solid #e8e8e8; }
 
 .footer-heading {
   font-size: 18px;
@@ -364,6 +364,33 @@ table {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.section-divider {
+  border: 2px; }
+  .section-divider hr {
+    border: 0;
+    text-align: center; }
+  .section-divider ::before {
+    content: '...';
+    display: inline-block;
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 1em;
+    position: relative; }
+
+.page-navigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden; }
+  .page-navigation a {
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 1em 0; }
+  .page-navigation .next {
+    float: right;
+    text-align: right; }
 
 /**
  * Syntax highlighting styles
