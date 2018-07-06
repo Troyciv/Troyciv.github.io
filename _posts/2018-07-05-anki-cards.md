@@ -1,5 +1,5 @@
 ---
-title: unseen, new , mature, buried, marked and suspended cards
+title: How Anki treats review cards
 published: false
 ---
 ### How Anki treats cards
