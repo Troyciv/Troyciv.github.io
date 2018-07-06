@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #111;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -76,10 +76,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #24890d;
   text-decoration: none; }
   a:visited {
-    color: #1756a9; }
+    color: #124306; }
   a:hover {
     color: #111;
     text-decoration: underline; }
@@ -186,7 +186,7 @@ table {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #424242;
+  border-top: 5px solid #333333;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative; }
@@ -199,7 +199,7 @@ table {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: #333333; }
 
 .site-nav {
   float: right;
@@ -218,7 +218,7 @@ table {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #fdfdfd;
+      background-color: #ffffff;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
@@ -238,7 +238,7 @@ table {
         padding-top: 10px;
         text-align: center; }
         .site-nav .menu-icon > svg {
-          fill: #424242; }
+          fill: #333333; }
       .site-nav input ~ .trigger {
         clear: both;
         display: none; }
@@ -257,7 +257,10 @@ table {
  */
 .site-footer {
   padding: 20px;
-  border-top: 1px solid #e8e8e8; }
+  border-top: 1px solid #e8e8e8;
+  background-color: #333333; }
+  .site-footer a {
+    color: #828282; }
 
 .footer-heading {
   font-size: 18px;
@@ -270,7 +273,7 @@ table {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  color: #e8e8e8;
   margin-left: -15px; }
 
 .footer-col {
@@ -373,8 +376,7 @@ table {
   .section-divider ::before {
     content: '...';
     display: inline-block;
-    font-size: 30px;
-    font-style: italic;
+    font-size: 32px;
     letter-spacing: 1em;
     position: relative; }
 
@@ -385,9 +387,9 @@ table {
   overflow: hidden; }
   .page-navigation a {
     display: block;
-    width: 50%;
+    width: 35%;
     float: left;
-    margin: 1em 0; }
+    margin: 1.5em 0; }
   .page-navigation .next {
     float: right;
     text-align: right; }
