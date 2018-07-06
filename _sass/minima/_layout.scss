@@ -257,7 +257,22 @@
   }
 }
 
-.PageNavigation {
+.section-divider {
+    hr {
+        border: 0;
+        text-align: center;
+    }
+    ::before {
+        content: '...';
+        display: inline-block;
+        font-size: 30px;
+        font-style: italic;
+        letter-spacing: 1em;
+        position: relative;
+    }
+}
+
+.page-navigation {
     font-size: 14px;
     display: block;
     width: auto;
@@ -271,7 +286,9 @@
     }
 
     .next {
+        float: right;
         text-align: right;
     }
 }
+
 
