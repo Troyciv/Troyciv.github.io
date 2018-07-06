@@ -76,10 +76,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #24890d;
+  color: #03a87c;
   text-decoration: none; }
   a:visited {
-    color: #124306; }
+    color: #025d45; }
   a:hover {
     color: #111;
     text-decoration: underline; }
@@ -186,7 +186,7 @@ table {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #333333;
+  border-top: 5px solid #03a87c;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative; }
@@ -256,8 +256,9 @@ table {
  * Site footer
  */
 .site-footer {
-  padding: 20px;
-  border-top: 1px solid #e8e8e8;
+  padding: 15px;
+  border-top: 5px solid #03a87c;
+  color: #e8e8e8;
   background-color: #333333; }
   .site-footer a {
     color: #828282; }
@@ -273,12 +274,11 @@ table {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #e8e8e8;
   margin-left: -15px; }
 
 .footer-col {
   float: left;
-  margin-bottom: 15px;
+  margin-bottom: 7.5px;
   padding-left: 15px; }
 
 .footer-col-1 {
@@ -375,6 +375,7 @@ table {
     text-align: center; }
   .section-divider ::before {
     content: '...';
+    color: #03a87c;
     display: inline-block;
     font-size: 32px;
     letter-spacing: 1em;
