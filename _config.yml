@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Troyka
-author: Troyciv
+author: Troy
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://troyciv.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -34,31 +34,32 @@ defaults:
       # type: ""
     values:
       layout: "post"
-      author: "Troyciv"
+      author: "Troy"
   -
     scope:
       path: "_drafts/"
     values:
       layout: "post"
-      author: Troyciv
+      author: "Troy"
 
 plugins:
   - jekyll-feed
-  - jekyll-redirect-from
+#  - jekyll-redirect-from
   - jekyll-seo-tag
 
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
 strict_front_matter: true
-# include:
 # keep_files:
 # timezone:
 encoding: utf-8
 show_drafts: FALSE
 future: TRUE
 unpublished: FALSE
+include:
+  - _pages
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

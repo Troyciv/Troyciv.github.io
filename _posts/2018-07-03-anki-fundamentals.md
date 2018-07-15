@@ -14,7 +14,6 @@ This is why I've written this short article in order to clear up some of the con
 
 <!-- ![Anki card creation flowchart]({{"/assets/img/anki-flowchart-3.svg"}}) -->
 <center>
-<!-- <img src="/assets/img/anki-flowchart-3.svg" onerror="this.src='/assets/img/anki-flowchart-1.png'"> -->
 <img src="/assets/img/anki-flowchart-4.svg" onerror="this.src='/assets/img/anki-flowchart-4.png'">
 </center>
 <br/>

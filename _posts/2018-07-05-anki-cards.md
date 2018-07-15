@@ -1,5 +1,8 @@
 ---
-title: How Anki treats review cards
+title: Not all cards are equal
+category: Anki
 published: false
 ---
-### How Anki treats cards
+
+In my last post I've covered how Anki automatically creates cards for you.
+Now it's time to review your cards.

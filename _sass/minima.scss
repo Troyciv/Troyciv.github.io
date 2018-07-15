@@ -14,7 +14,10 @@ $text-color:       #111 !default;
 // $background-color: #fdfdfd !default;
 $background-color: #ffffff !default;
 // $brand-color:      #2a7ae2 !default;
-$brand-color:      #24890d !default;
+// mint green #03a87c
+// bottle greem #24890d
+$brand-color:      #03a87c !default;
+$header-color:     $brand-color;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;

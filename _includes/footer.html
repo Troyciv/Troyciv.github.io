@@ -3,14 +3,12 @@
 
   <div class="wrapper">
 
-    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
+    <!-- <h3 class="footer-heading">{{ site.title | escape }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
+          <h3 class="footer-heading">{{ site.title | escape }}</h3>
         <ul class="contact-list">
-          <li>
-            <h3 class="footer-heading">{{ site.title | escape }}</h3>
-          </li>
           <!-- <li> -->
           <!--   <\!-- <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -\-> -->
           <!--   {{ site.title | escape }} -->
@@ -38,14 +36,14 @@
             <a href="{{ "/feed.xml" | relative_url }}">RSS-feed</a>
           </li>
           <li>
-            <a href="{{ "/about/" | relative_url }}">about</a>
+            <a href="{{ "/about/" | relative_url }}">About</a>
           </li>
-          
+          <!-- • -->
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
-        <!-- {%- include social.html -%} -->
+        {%- include social.html -%}
         <!-- {%- if site.github_username -%} -->
         <!-- <li> -->
         <!--   <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}"> -->
@@ -60,9 +58,10 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        {%- if site.license -%}
-            <p>{{ site.license }}</p>
-        {%- endif -%}
+        <!-- {%- if site.license -%} -->
+        <!--     <div class="license">{{ site.license }}</div> -->
+        <!-- {%- endif -%} -->
+        {%- include license.html -%}
       </div>
 
     </div>

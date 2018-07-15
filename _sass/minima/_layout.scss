@@ -2,7 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  // border-top: 5px solid $grey-color-dark;
+  border-top: 5px solid $header-color;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
@@ -106,8 +107,10 @@
  * Site footer
  */
 .site-footer {
-  padding: $spacing-unit - 10;
-  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit - 15;
+  // border-top: 1px solid $grey-color-light;
+  border-top: 5px solid $brand-color;
+  color: $grey-color-light;
   background-color: $grey-color-dark;
 
   a {
@@ -128,16 +131,16 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color-light;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 4;
   padding-left: $spacing-unit / 2;
 }
+
 
 .footer-col-1 {
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
@@ -236,9 +239,9 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
-  a {
-      text-decoration: underline;
-  }
+  // a {
+  //     text-decoration: underline;
+  // }
 
   h2 {
     @include relative-font-size(2);
@@ -275,6 +278,8 @@
 
     ::before {
         content: '...';
+        // color: $grey-color-dark;
+        color: $brand-color;
         display: inline-block;
         font-size: $base-font-size*2;
         // font-style: italic;
