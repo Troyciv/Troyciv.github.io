@@ -1,22 +1,21 @@
 ---
 title: The fundamental principle of Anki card creation
 date: 2018-07-04
-# edit: 2018-07-05
+edit: 2018-07-15
 categories: Anki
 tags: Anki learn language
 ---
 
-During the last weeks I've been a little more active on the [Anki subreddit](https://www.reddit.com/r/anki) than usual.
+During the last weeks I've been a little more active on the 
+[Anki subreddit](https://www.reddit.com/r/anki) than usual.
 One thing I noticed was that some new users have difficulties to grasp how Anki actually creates cards.
-While I do think that the [official Anki docs](https://apps.ankiweb.net/docs/manual.html) are excellently written, I also understand that a technical documentation can be a little bit overwhelming at times.
+While I do think that the [official Anki docs](https://apps.ankiweb.net/docs/manual.html)
+are excellently written, I also understand that a technical documentation can be a little bit overwhelming at times.
 This is why I've written this short article in order to clear up some of the confusion.
 
+![Anki card creation flowchart](/assets/img/anki-flowchart-4.svg)
+*caption*
 
-<!-- ![Anki card creation flowchart]({{"/assets/img/anki-flowchart-3.svg"}}) -->
-<center>
-<img src="/assets/img/anki-flowchart-4.svg" onerror="this.src='/assets/img/anki-flowchart-4.png'">
-</center>
-<br/>
 The graphic above shows the whole process of card creation.
 In Anki, you don't create cards yourself but Anki creates them automatically based on the **notes** and the **templates** you give it.
 
